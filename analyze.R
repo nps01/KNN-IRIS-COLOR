@@ -16,8 +16,9 @@ library(tictoc)
 
 # 1) Set working directory
 #---------------------------------
-if (getwd() != "C:/Users/LENOVO/Documents/R/my_scripts/knn_eye_color") { # put working directory path here
-  setwd("C:/Users/LENOVO/Documents/R/my_scripts/knn_eye_color")
+my_path <- "" # set path to KNN-IRIS-COLOR folder
+if (getwd() != my_path) { # put working directory path here
+  setwd(my_path)
   print(c("curr dir: ", getwd()))
 } 
 
